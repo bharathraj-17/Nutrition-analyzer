@@ -219,6 +219,48 @@ function calculateNutrition() {
   setRiskColor("gutBar", gutRisk);
 
   // -----------------------------
+// Recommendations based on risk
+// -----------------------------
+let recommendations = [];
+
+if (diabetesRisk >= 70) {
+  recommendations.push("Reduce sugary drinks, sweets, and processed snacks.");
+  recommendations.push("Eat more fiber foods: oats, dal, vegetables, greens.");
+  recommendations.push("Choose whole grains instead of white rice often.");
+}
+
+if (heartRisk >= 70) {
+  recommendations.push("Reduce fried foods and saturated fats (parotta, pakoda, samosa).");
+  recommendations.push("Add healthy fats: nuts, fish, olive oil.");
+  recommendations.push("Eat more fruits and vegetables for antioxidants.");
+}
+
+if (obesityRisk >= 70) {
+  recommendations.push("Reduce portion size and avoid late-night heavy meals.");
+  recommendations.push("Increase protein foods: eggs, chicken, paneer, dal.");
+  recommendations.push("Prefer boiled/steamed foods instead of deep fried.");
+}
+
+if (gutRisk >= 70) {
+  recommendations.push("Increase fiber: vegetables, fruits, legumes, whole grains.");
+  recommendations.push("Add probiotics: curd, buttermilk.");
+  recommendations.push("Drink more water and avoid too much junk food.");
+}
+
+if (recommendations.length === 0) {
+  recommendations.push("Great job! Your intake looks balanced. Keep eating protein + vegetables daily 👍");
+}
+
+const recList = document.getElementById("recommendations");
+recList.innerHTML = "";
+recommendations.forEach(r => {
+  let li = document.createElement("li");
+  li.textContent = r;
+  recList.appendChild(li);
+});
+
+
+  // -----------------------------
   // Charts
   // -----------------------------
   showChart(total.protein, total.carbs, total.fat);
@@ -227,6 +269,7 @@ function calculateNutrition() {
   let recommendedCalories = calorieNeed ? calorieNeed : 2000;
   showCalorieChart(total.calories, recommendedCalories);
 }
+
 
 
 function showChart(protein, carbs, fat) {
