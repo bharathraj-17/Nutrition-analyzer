@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Nutrition Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🍲 Food Nutrition Analyzer + Disease Risk</h1>
+    <p class="subtitle">Enter what you ate today and get nutrition + health risk insights.</p>
+
+    <!-- BMI + BMR BOX -->
+    <div class="bmi-box">
+      <h2>📌 Personal Details (BMI + BMR)</h2>
+
+      <div class="bmi-inputs">
+        <input type="number" id="age" placeholder="Age" min="1">
+        <input type="number" id="height" placeholder="Height (cm)" min="1">
+        <input type="number" id="weight" placeholder="Weight (kg)" min="1">
+
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+
+        <select id="activity">
+          <option value="1.2">Sedentary (No exercise)</option>
+          <option value="1.375">Light (1-3 days/week)</option>
+          <option value="1.55">Moderate (3-5 days/week)</option>
+          <option value="1.725">Active (6-7 days/week)</option>
+          <option value="1.9">Very Active (Athlete)</option>
+        </select>
+      </div>
+
+      <div class="bmi-results">
+        <p id="bmiResult"></p>
+        <p id="bmrResult"></p>
+        <p id="calorieNeed"></p>
+      </div>
+    </div>
+
+    <!-- FOOD INPUT -->
+    <div class="input-box">
+      <select id="foodSelect"></select>
+      <input type="number" id="quantity" placeholder="Quantity" min="1" value="1">
+      <button onclick="addFood()">Add Food</button>
+    </div>
+
+    <!-- FOOD LIST -->
+    <div class="food-list">
+  <h3>Foods Eaten Today:</h3>
+  <ul id="foodList"></ul>
+  <button class="clear-btn" onclick="clearAllFoods()">Clear All</button>
+</div>
+
+
+    <button class="calc-btn" onclick="calculateNutrition()">Calculate Nutrition</button>
+
+    <!-- RESULTS -->
+    <div class="results" id="resultsBox">
+      <h2>Results</h2>
+
+      <p id="calories"></p>
+      <p id="protein"></p>
+      <p id="carbs"></p>
+      <p id="fat"></p>
+      <p id="sugar"></p>
+      <p id="fiber"></p>
+
+      <h3>⭐ Health Score</h3>
+      <p id="healthScore"></p>
+
+      <h3>📊 Risk Meter</h3>
+
+      <div class="risk-box">
+        <p>Diabetes Risk</p>
+        <div class="progress">
+          <div id="diabetesBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="risk-box">
+        <p>Heart Disease Risk</p>
+        <div class="progress">
+          <div id="heartBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="risk-box">
+        <p>Obesity Risk</p>
+        <div class="progress">
+          <div id="obesityBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <div class="risk-box">
+        <p>Gut Health Risk</p>
+        <div class="progress">
+          <div id="gutBar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <h3>⚠ Health Risk Alerts</h3>
+      <ul id="warnings"></ul>
+
+      <h3>💧 Hydration Reminder</h3>
+      <p id="hydration"></p>
+
+      <h3>📌 Macronutrient Distribution</h3>
+      <canvas id="macroChart"></canvas>
+
+      <h3>📈 Extra Chart (Calories vs Recommended)</h3>
+      <canvas id="calorieChart"></canvas>
+    </div>
+
+    <!-- MOTIVATION BOX -->
+    <div class="info-box">
+      <h2>🌿 Healthy Eating Motivation</h2>
+
+      <p><b>Eat Smart, Live Strong:</b> Your food is not just energy — it directly affects your mood, immunity, and long-term health.</p>
+
+      <p><b>💪 Strong Immunity :</b> Foods rich in fiber, probiotics (curd), and vitamins support healthy gut bacteria, which strengthens digestion and immunity.</p>
+
+      <p><b>🧠 Better Mood & Focus :</b> Balanced meals reduce stress, improve concentration, and prevent emotional eating caused by sugar cravings.</p>
+
+      <p><b>📊 Small Daily Choices Matter :</b> Even small reductions in sugar and fried food can lower health risks over time. Tracking your intake helps you stay consistent.</p>
+
+      <p><b>🔥 Reminder:</b> Healthy eating is not a sacrifice — it is an investment in your future self.</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
