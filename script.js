@@ -1,40 +1,40 @@
 const foods = {
-  "Rice (1 cup)": { calories: 200, protein: 4, carbs: 45, fat: 0.5, sugar: 0, fiber: 1 },
-  "Dosa (1 piece)": { calories: 150, protein: 3, carbs: 25, fat: 4, sugar: 1, fiber: 2 },
-  "Idli (2 pieces)": { calories: 120, protein: 4, carbs: 24, fat: 1, sugar: 1, fiber: 2 },
-  "Egg (1)": { calories: 70, protein: 6, carbs: 0.5, fat: 5, sugar: 0, fiber: 0 },
-  "Chicken (100g)": { calories: 165, protein: 31, carbs: 0, fat: 3.6, sugar: 0, fiber: 0 },
-  "Fish (100g)": { calories: 200, protein: 22, carbs: 0, fat: 12, sugar: 0, fiber: 0 },
-  "Banana (1)": { calories: 105, protein: 1.3, carbs: 27, fat: 0.4, sugar: 14, fiber: 3 },
-  "Apple (1)": { calories: 95, protein: 0.5, carbs: 25, fat: 0.3, sugar: 19, fiber: 4 },
-  "Milk (1 glass)": { calories: 120, protein: 8, carbs: 12, fat: 5, sugar: 12, fiber: 0 },
-  "Tea with sugar (1 cup)": { calories: 90, protein: 1, carbs: 15, fat: 2, sugar: 12, fiber: 0 },
-  "Chapati (1)": { calories: 120, protein: 3, carbs: 20, fat: 3, sugar: 1, fiber: 2 },
-  "Parotta (1)": { calories: 300, protein: 6, carbs: 45, fat: 12, sugar: 2, fiber: 2 },
-  "Samosa (1)": { calories: 260, protein: 5, carbs: 32, fat: 12, sugar: 2, fiber: 3 },
-  "Burger (1)": { calories: 350, protein: 18, carbs: 35, fat: 15, sugar: 5, fiber: 2 },
-  "Pizza slice (1)": { calories: 285, protein: 12, carbs: 36, fat: 10, sugar: 4, fiber: 2 },
-  "Coke (1 can)": { calories: 140, protein: 0, carbs: 39, fat: 0, sugar: 39, fiber: 0 },
-  "Chocolate (50g)": { calories: 270, protein: 3, carbs: 30, fat: 15, sugar: 25, fiber: 2 },
-  "Curd (1 cup)": { calories: 100, protein: 6, carbs: 8, fat: 4, sugar: 5, fiber: 0 },
-  "Dal (1 cup)": { calories: 180, protein: 12, carbs: 30, fat: 4, sugar: 2, fiber: 8 },
-   "Biriyani (1 plate)": { calories: 700, protein: 25, carbs: 90, fat: 25, sugar: 5, fiber: 4 },
-   "Paneer (100g)": { calories: 265, protein: 18, carbs: 6, fat: 20, sugar: 2, fiber: 0 },
-  "Rajma (1 cup)": { calories: 240, protein: 15, carbs: 40, fat: 3, sugar: 3, fiber: 12 },
-  "Chole (1 cup)": { calories: 260, protein: 12, carbs: 35, fat: 9, sugar: 4, fiber: 10 },
-  "Aloo Paratha (1)": { calories: 300, protein: 6, carbs: 40, fat: 12, sugar: 2, fiber: 4 },
-  "Masala Dosa (1)": { calories: 250, protein: 5, carbs: 40, fat: 8, sugar: 2, fiber: 4 },
-  "Poori (2 pieces)": { calories: 300, protein: 6, carbs: 35, fat: 15, sugar: 2, fiber: 3 },
-  "Curd Rice (1 cup)": { calories: 250, protein: 7, carbs: 40, fat: 6, sugar: 6, fiber: 1 },
-  "Lemon Rice (1 cup)": { calories: 280, protein: 6, carbs: 45, fat: 8, sugar: 2, fiber: 3 },
-  "Fried Rice (1 plate)": { calories: 450, protein: 12, carbs: 70, fat: 14, sugar: 4, fiber: 4 },
-  "Noodles (1 plate)": { calories: 500, protein: 10, carbs: 75, fat: 18, sugar: 5, fiber: 3 },
-  "Momos (6 pieces)": { calories: 350, protein: 12, carbs: 45, fat: 12, sugar: 3, fiber: 2 },
-  "Gulab Jamun (2 pieces)": { calories: 300, protein: 4, carbs: 45, fat: 10, sugar: 35, fiber: 0 },
-  "Jalebi (100g)": { calories: 450, protein: 2, carbs: 70, fat: 18, sugar: 55, fiber: 0 },
-  "Roti with Curry (1 meal)": { calories: 500, protein: 15, carbs: 70, fat: 15, sugar: 5, fiber: 8 },
-  "South Indian Meals (1 plate)": { calories: 800, protein: 20, carbs: 120, fat: 25, sugar: 10, fiber: 15 },
-  "Vegetable Curry (1 cup)": { calories: 150, protein: 4, carbs: 20, fat: 6, sugar: 4, fiber: 6 }
+  "Rice (1 cup)": { calories: 200, protein: 4, carbs: 45, fat: 0.5, sugar: 0, fiber: 1, iron: 3, calcium: 5, vitC: 1, sodium: 5 },
+  "Dosa (1 piece)": { calories: 150, protein: 3, carbs: 25, fat: 4, sugar: 1, fiber: 2, iron: 4, calcium: 2, vitC: 5, sodium: 5 },
+  "Idli (2 pieces)": { calories: 120, protein: 4, carbs: 24, fat: 1, sugar: 1, fiber: 2 , iron: 3, calcium: 1, vitC: 4, sodium: 5},
+  "Egg (1)": { calories: 70, protein: 6, carbs: 0.5, fat: 5, sugar: 0, fiber: 0 , iron: 3, calcium: 1, vitC: 4, sodium: 5},
+  "Chicken (100g)": { calories: 165, protein: 31, carbs: 0, fat: 3.6, sugar: 0, fiber: 0, iron: 1, calcium: 3, vitC: 4, sodium: 5 },
+  "Fish (100g)": { calories: 200, protein: 22, carbs: 0, fat: 12, sugar: 0, fiber: 0, iron: 5, calcium: 1, vitC: 4, sodium: 5 },
+  "Banana (1)": { calories: 105, protein: 1.3, carbs: 27, fat: 0.4, sugar: 14, fiber: 3, iron: 2, calcium: 3, vitC: 3, sodium: 5 },
+  "Apple (1)": { calories: 95, protein: 0.5, carbs: 25, fat: 0.3, sugar: 19, fiber: 4, iron: 4, calcium: 10, vitC: 1, sodium: 5 },
+  "Milk (1 glass)": { calories: 120, protein: 8, carbs: 12, fat: 5, sugar: 12, fiber: 0, iron: 1, calcium: 5, vitC: 3, sodium: 5 },
+  "Tea with sugar (1 cup)": { calories: 90, protein: 1, carbs: 15, fat: 2, sugar: 12, fiber: 0, iron: 4, calcium: 10, vitC: 2, sodium: 5 },
+  "Chapati (1)": { calories: 120, protein: 3, carbs: 20, fat: 3, sugar: 1, fiber: 2, iron: 4, calcium: 1, vitC: 2, sodium: 5 },
+  "Parotta (1)": { calories: 300, protein: 6, carbs: 45, fat: 12, sugar: 2, fiber: 2 , iron: 5, calcium: 10, vitC: 5, sodium: 5},
+  "Samosa (1)": { calories: 260, protein: 5, carbs: 32, fat: 12, sugar: 2, fiber: 3, iron: 3, calcium: 1, vitC: 5, sodium: 5 },
+  "Burger (1)": { calories: 350, protein: 18, carbs: 35, fat: 15, sugar: 5, fiber: 2, iron: 2, calcium: 5, vitC: 4, sodium: 5 },
+  "Pizza slice (1)": { calories: 285, protein: 12, carbs: 36, fat: 10, sugar: 4, fiber: 2, iron: 4, calcium: 10, vitC: 5, sodium: 5 },
+  "Coke (1 can)": { calories: 140, protein: 0, carbs: 39, fat: 0, sugar: 39, fiber: 0, iron: 5, calcium: 10, vitC: 4, sodium: 5 },
+  "Chocolate (50g)": { calories: 270, protein: 3, carbs: 30, fat: 15, sugar: 25, fiber: 2, iron: 1, calcium: 5, vitC: 2, sodium: 5 },
+  "Curd (1 cup)": { calories: 100, protein: 6, carbs: 8, fat: 4, sugar: 5, fiber: 0, iron: 1, calcium: 1, vitC: 3, sodium: 5 },
+  "Dal (1 cup)": { calories: 180, protein: 12, carbs: 30, fat: 4, sugar: 2, fiber: 8 , iron: 5, calcium: 10, vitC: 3, sodium: 5},
+   "Biriyani (1 plate)": { calories: 700, protein: 25, carbs: 90, fat: 25, sugar: 5, fiber: 4, iron: 3, calcium: 10, vitC: 4, sodium: 5 },
+   "Paneer (100g)": { calories: 265, protein: 18, carbs: 6, fat: 20, sugar: 2, fiber: 0 , iron: 1, calcium: 10, vitC: 3, sodium: 5},
+  "Rajma (1 cup)": { calories: 240, protein: 15, carbs: 40, fat: 3, sugar: 3, fiber: 12, iron: 1, calcium: 4, vitC: 1, sodium: 5 },
+  "Chole (1 cup)": { calories: 260, protein: 12, carbs: 35, fat: 9, sugar: 4, fiber: 10 , iron: 4, calcium: 3, vitC: 4, sodium: 5},
+  "Aloo Paratha (1)": { calories: 300, protein: 6, carbs: 40, fat: 12, sugar: 2, fiber: 4, iron: 1, calcium: 1, vitC: 5, sodium: 5 },
+  "Masala Dosa (1)": { calories: 250, protein: 5, carbs: 40, fat: 8, sugar: 2, fiber: 4, iron: 1, calcium: 10, vitC: 4, sodium: 5 },
+  "Poori (2 pieces)": { calories: 300, protein: 6, carbs: 35, fat: 15, sugar: 2, fiber: 3, iron: 1, calcium: 1, vitC: 3, sodium: 5 },
+  "Curd Rice (1 cup)": { calories: 250, protein: 7, carbs: 40, fat: 6, sugar: 6, fiber: 1 , iron: 1, calcium: 10, vitC: 4, sodium: 5},
+  "Lemon Rice (1 cup)": { calories: 280, protein: 6, carbs: 45, fat: 8, sugar: 2, fiber: 3 , iron: 2, calcium: 5, vitC: 2, sodium: 5},
+  "Fried Rice (1 plate)": { calories: 450, protein: 12, carbs: 70, fat: 14, sugar: 4, fiber: 4 , iron: 1, calcium: 10, vitC: 5, sodium: 3},
+  "Noodles (1 plate)": { calories: 500, protein: 10, carbs: 75, fat: 18, sugar: 5, fiber: 3, iron: 1, calcium: 10, vitC: 4, sodium: 5 },
+  "Momos (6 pieces)": { calories: 350, protein: 12, carbs: 45, fat: 12, sugar: 3, fiber: 2, iron: 4, calcium: 3, vitC: 5, sodium: 4 },
+  "Gulab Jamun (2 pieces)": { calories: 300, protein: 4, carbs: 45, fat: 10, sugar: 35, fiber: 0, iron: 2, calcium: 1, vitC: 4, sodium: 5 },
+  "Jalebi (100g)": { calories: 450, protein: 2, carbs: 70, fat: 18, sugar: 55, fiber: 0, iron: 3, calcium: 1, vitC: 4, sodium: 5 },
+  "Roti with Curry (1 meal)": { calories: 500, protein: 15, carbs: 70, fat: 15, sugar: 5, fiber: 8, iron: 2, calcium: 4, vitC: 4, sodium: 1 },
+  "South Indian Meals (1 plate)": { calories: 800, protein: 20, carbs: 120, fat: 25, sugar: 10, fiber: 15, iron: 5, calcium: 10, vitC: 2, sodium: 5 },
+  "Vegetable Curry (1 cup)": { calories: 150, protein: 4, carbs: 20, fat: 6, sugar: 4, fiber: 6, iron: 3, calcium: 10, vitC: 3, sodium: 5 }
 };
 
 let eatenFoods = [];
@@ -89,7 +89,8 @@ function clearAllFoods() {
 
 
 function calculateNutrition() {
-  let total = { calories: 0, protein: 0, carbs: 0, fat: 0, sugar: 0, fiber: 0 };
+  let total = { calories: 0, protein: 0, carbs: 0, fat: 0, sugar: 0, fiber: 0, iron: 0, calcium: 0, vitC: 0, sodium: 0 };
+
 
   eatenFoods.forEach(item => {
     let food = foods[item.name];
@@ -99,6 +100,11 @@ function calculateNutrition() {
     total.fat += food.fat * item.qty;
     total.sugar += food.sugar * item.qty;
     total.fiber += food.fiber * item.qty;
+    total.iron += food.iron * item.qty;
+    total.calcium += food.calcium * item.qty;
+    total.vitC += food.vitC * item.qty;
+    total.sodium += food.sodium * item.qty;
+
   });
 
   document.getElementById("resultsBox").style.display = "block";
@@ -109,6 +115,10 @@ function calculateNutrition() {
   document.getElementById("fat").innerHTML = `<b>Fat:</b> ${total.fat.toFixed(1)} g`;
   document.getElementById("sugar").innerHTML = `<b>Sugar:</b> ${total.sugar.toFixed(1)} g`;
   document.getElementById("fiber").innerHTML = `<b>Fiber:</b> ${total.fiber.toFixed(1)} g`;
+  document.getElementById("iron").innerHTML = `<b>Iron:</b> ${total.iron.toFixed(1)} mg`;
+document.getElementById("calcium").innerHTML = `<b>Calcium:</b> ${total.calcium.toFixed(1)} mg`;
+document.getElementById("vitC").innerHTML = `<b>Vitamin C:</b> ${total.vitC.toFixed(1)} mg`;
+document.getElementById("sodium").innerHTML = `<b>Sodium:</b> ${total.sodium.toFixed(1)} mg`;
 
   // -----------------------------
   // BMI + BMR Calculation
